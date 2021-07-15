@@ -1,0 +1,120 @@
+<!-- 
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////   ////////  ////    //     //  /////////  ////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //   ////////    //    /////////  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  ////////   //////         //  /////////  ////// 
+
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  
+
+ ////////   ///////    ///////////////  ////////   //     //   ///////     //////    ///////  
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+ ////////  /////////  //     //     //  /////////  /////////  /////////      //        //
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+////////   //     //  //     //     //  ////////   //     //  //     //    ///       //////  
+
+ ////////  /////////   //     //     //  ////////    ////////  //////////
+//         //     //   //     //     //  //     //  //     //      //    
+//         //     //   //     //     //  //     //  //     //      //    
+ ///////   /////////   //     //     //  /////////  //     //      //
+       //  //     //   //     //     //  //     //  //     //      //   
+       //  //     //   //     //     //  //     //  //     //      //   
+////////   //     //    //////////////   //     //  //     //      //
+-->
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.min.css"> <!-- remember to minify! -->
+        <link rel="shortcut icon" href="/assets/icon2.ico" type="image/x-icon">
+        <link rel="manifest" href="manifest.json">
+        <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js" integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1" crossorigin="anonymous"></script>
+        <!--codemirror-->
+        <link rel="stylesheet" href="lib/codemirror.css">
+        <script src="lib/codemirror.js"></script>
+        <script src="mode/htmlmixed/htmlmixed.js"></script>
+        <script src="mode/xml/xml.js"></script>
+        <script src="mode/css/css.js"></script>
+        <script src="mode/javascript/javascript.js"></script>
+        <script src="edit/closebrackets.js"></script>
+        <script src="edit/closetag.js"></script>
+        <!--codemirror-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+        <meta property="og:title" content="HTML Online Editor"/>
+        <meta property="og:description" content="Free HTML,CSS,JS Editor"/>
+        <meta property="og:image" content="https://shubhams1401-sawant.github.io/htmleditor/logo.png"/>
+        
+        <link rel="shortcut icon" href="logo.png" style="border-radius: 50px;">
+
+        <title>HTML Online Editor</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title"></h1>
+        </header>
+
+        <div class="container">
+            <div id="code_area"></div>
+            <iframe id="code_output"></iframe>
+        </div>
+
+        <footer>
+            <a href="https://shubhams1401-sawant.github.io/" target="_blank">Shubham Sawant</a>
+        </footer>
+        <script>
+            document.getElementById('title').innerHTML = "< HTML Online Editor />"
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
+<!-- 
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////   ////////  ////    //     //  /////////  ////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+//         //     //  //     //  //     //  //     //  //     //  //     //     //  //           //    //     //  //     //    //
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //   ////////    //    /////////  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //         //    //           //  //     //    //
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  ////////   //////         //  /////////  ////// 
+
+ ////////  //     //  //     //  ////////   //     //   ////////   ///////////////  
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+//         //     //  //     //  //     //  //     //  //     //  //     //     //    
+ ///////   /////////  //     //  /////////  /////////  /////////  //     //     //
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+       //  //     //  //     //  //     //  //     //  //     //  //     //     //   
+////////   //     //   ///////   ////////   //     //  //     //  //     //     //  
+
+ ////////   ///////    ///////////////  ////////   //     //   ///////     //////    ///////  
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+//         //     //  //     //     //  //     //  //     //  //     //      //        //    
+ ////////  /////////  //     //     //  /////////  /////////  /////////      //        //
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+       //  //     //  //     //     //  //     //  //     //  //     //      //        //   
+////////   //     //  //     //     //  ////////   //     //  //     //    ///       //////  
+
+ ////////  /////////   //     //     //  ////////    ////////  //////////
+//         //     //   //     //     //  //     //  //     //      //    
+//         //     //   //     //     //  //     //  //     //      //    
+ ///////   /////////   //     //     //  /////////  //     //      //
+       //  //     //   //     //     //  //     //  //     //      //   
+       //  //     //   //     //     //  //     //  //     //      //   
+////////   //     //    //////////////   //     //  //     //      //
+-->
+<!-- Shubham Sambhaji Sawant -->
+<!-- instagram : @shubhams1401-->
